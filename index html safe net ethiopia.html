@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SafeNet Ethiopia</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>SafeNet Ethiopia</h1>
+  <p>Online Gender-Based Violence Awareness Platform</p>
+</header>
+
+<nav>
+  <a href="index.html">Dashboard</a>
+  <a href="report.html">Report</a>
+  <a href="login.html">Admin</a>
+</nav>
+
+<section>
+  <h2>Research Data Overview</h2>
+
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Percentage</th>
+    </tr>
+    <tr><td>Online harassment</td><td>58%</td></tr>
+    <tr><td>Verbal abuse</td><td>62%</td></tr>
+    <tr><td>Psychological impact</td><td>70%</td></tr>
+    <tr><td>Reporting rate</td><td>20%</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>GBV Impact Graph</h2>
+  <canvas id="chart"></canvas>
+</section>
+
+<section>
+  <h2>Awareness Tools</h2>
+
+  <button onclick="showInfo('harassment')">What is Harassment?</button>
+  <button onclick="showInfo('report')">How to Report</button>
+  <button onclick="showInfo('help')">Get Help</button>
+
+  <p id="infoBox"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
